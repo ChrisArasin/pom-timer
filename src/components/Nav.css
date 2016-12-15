@@ -1,0 +1,90 @@
+.nav {
+  position: fixed;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  /*background: rgba(0, 0, 0, .5);*/
+  /*opacity: .25;*/
+  transition: all .3s;
+  z-index: 2000;
+}
+.navButton {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  transform: translateY(35px);
+  transition: all .3s;
+  opacity: 0;
+  background: transparent;
+}
+.navButton::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid #555;
+  transition: all .3s;
+}
+.navButton:hover::after {
+  border: 2px solid #999;
+  box-shadow: 0 0 2px rgba(255, 255, 255, .25), inset 0 0 2px rgba(255, 255, 255, .25);
+
+}
+.navButton:active::after {
+  border: 2px solid #fff;
+  transition: all .15s;
+  box-shadow: 0 0 4px rgba(255, 255, 255, .75), inset 0 0 4px rgba(255, 255, 255, .75);
+
+}
+.showButton .navButton, .showAll .navButton {
+  opacity: 1;
+  transform: translateY(0);
+  cursor: pointer;
+}
+.nav:hover {
+  opacity: 1;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 70px;
+  bottom: 22px;
+}
+.nav li {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .06em;
+  transition: all .3s;
+  display:inline-block;
+  margin-right:20px;
+  transform: translateY(35px);
+  opacity: 0;
+}
+
+ .nav.showAll li {
+  transform: translateY(0);
+  opacity: 1;
+  background: rgba(36, 36, 36, .85);
+  box-shadow: 0 0 25px 15px rgba(36, 36, 36, 1);
+ }
+ .nav li span {
+   color: #777;
+   transition: all .2s;
+ }
+.nav li:hover span {
+  cursor: pointer;
+  color:#fff;
+}
+.nav li.on span {
+  color:#fff;
+}

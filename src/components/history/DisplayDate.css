@@ -1,0 +1,19 @@
+.bar-date {
+  display: inline-block;
+  width: 76px;
+}
+.date-dot {
+  display: inline-block;
+  text-align: center;
+  padding: 0 ;
+}
+.date-digits {
+  display: inline-block;
+  text-align: left;
+}
+.date-digits.day-range {
+  width: 45px;
+}
+.bar-date .date-digits:first-child {
+  width: 32px;
+}

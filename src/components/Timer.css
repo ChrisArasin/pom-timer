@@ -1,0 +1,8 @@
+.timer {
+  margin: 0 auto;
+  position: relative;
+}
+.timer-inner {
+  position: relative;
+  padding-bottom: 51px
+}

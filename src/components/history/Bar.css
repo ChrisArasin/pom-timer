@@ -1,0 +1,59 @@
+.bar-wrap {
+  padding: 0 5px;
+  position: relative;
+  transition: all .25s;
+  border-radius: 2px;
+}
+.history-bar {
+  height: 2px;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  top: -4px;
+}
+.bar-data {
+  padding: 5px 0;
+  display: inline-block;
+  width: 240px;
+  height: 11px;
+  line-height: 11px;
+  transition: all .1s;
+}
+
+.history-bar .bar {
+  transition: transform .5s;
+  transform-origin: left center;
+  position: absolute;
+  height: 2px;
+}
+.history-bar .work-bar {
+  background: #c53551;
+}
+.history-bar .break-bar {
+  background: #655790;
+}
+.bar-header .bar-text {
+  font-weight: 500;
+}
+.bar-text {
+  color: #999;
+  font-size: 11px;
+  line-height: 11px;
+  height: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-right: 5px;
+  display: inline-block;
+}
+.bar-work-time {
+  width: 48px;
+  color: #c53551;
+}
+.bar-break-time {
+  width: 48px;
+  color: #8471bf;
+}
+.bar-ratio {
+  width: 48px;
+  color: #ddd;
+}

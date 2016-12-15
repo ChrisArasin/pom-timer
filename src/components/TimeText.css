@@ -1,0 +1,54 @@
+#time-text {
+  font-size: 40px;
+  position: absolute;
+  margin: 4px 0 0 -7px;
+  padding: 0 6px;
+  line-height: 1;
+  box-shadow: 5px 5px 35px 8px #242424;
+  background: #242424;
+  min-width: 85px;
+  transition: all .4s;
+  color: #cfcfce;
+  z-index: 2;
+}
+
+#time-text.over-time {
+  color: #ee2f54;
+}
+#time-text.over-time.breaking {
+  color: #745eb7;
+}
+
+#time-text.switching {
+  opacity: 0;
+  transition: all .3s;
+}
+
+#time-text.reset {
+  opacity: 0;
+  transition: none !important;
+  transform: none;
+}
+
+
+.appTransition-appear #time-text{
+  opacity: 0;
+}
+.appTransition-appear.appTransition-appear-active #time-text {
+  opacity: 1;
+  transition: all .4s;
+}
+.appTransition-enter #time-text{
+  opacity: 0;
+}
+.appTransition-enter.appTransition-enter-active #time-text{
+  opacity: 1;
+  transition: all .4s;
+}
+.appTransition-leave #time-text{
+  opacity: 1;
+}
+.appTransition-leave.appTransition-leave-active #time-text{
+  opacity: 0;
+  transition: all .4s;
+}

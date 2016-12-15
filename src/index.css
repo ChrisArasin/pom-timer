@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #242424;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", 'Gotham Rounded', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#root {
+  height: 100%;
+}
+.formChild {
+  background: #242424;
+}

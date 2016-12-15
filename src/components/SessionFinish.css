@@ -1,0 +1,96 @@
+.session-finish {
+  color: #ccc;
+  width: 390px;
+  margin: 0 auto;
+  padding: 20px
+}
+.session-finish p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.header {
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing: .08em;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+
+.start-form .input:focus {
+  background: #333;
+}
+.work-time {
+  color: #db1d4a;
+  font-weight: 500;
+}
+.break-time {
+  color: #6e57a4;
+  font-weight: 500;
+}
+.start-form .input.num-times {
+  color: #fff;
+  border-color: #fff;
+}
+.form-total {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500
+}
+
+a.button {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 13px 25px;
+  border-radius: 3px;
+  border: 2px solid #db1d4a;
+  background: transparent;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", sans-serif;  font-weight: 500;
+  letter-spacing: .1em;
+  margin-top: 5px;
+  transition: all .2s;
+  outline: 0;
+}
+
+.button:hover {
+  background: #303030;
+  cursor: pointer;
+}
+.button:active {
+  background: #393939;
+}
+
+
+.appTransition-appear .textChild{
+  opacity: 0;
+  transform: translateY(15px);
+}
+.appTransition-appear.appTransition-appear-active .textChild {
+  opacity: 1;
+  transition: all .5s;
+  transform: translateY(0);
+}
+.appTransition-enter .textChild{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appTransition-enter.appTransition-enter-active .textChild{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .5s;
+}
+.appTransition-leave .textChild{
+  transform: translateY(0);
+  opacity: 1;
+}
+.appTransition-leave.appTransition-leave-active .textChild{
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+}
+.front {
+  position: relative;
+  z-index: 1000;
+}

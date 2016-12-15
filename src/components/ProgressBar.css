@@ -1,0 +1,58 @@
+.progress-bar {
+  position: absolute;
+  bottom:0;
+  left:4px;
+  height: 2px;
+  opacity: 1;
+  transform-style: preserve-3d;
+  transition: all .4s;
+}
+.bk-bar {
+  height: 2px;
+  width: 100%;
+  opacity: .4;
+  background: rgba(255, 255, 255, .125);
+}
+.on .bk-bar, .on .bar {
+  animation: lightBar 1s ease-in-out;
+}
+@keyframes lightBar {
+  0% {
+    opacity: .4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+.progress-bar .bar {
+  transition: all .9s;
+  transform-origin: left center;
+  position: absolute;
+  opacity: .4;
+  height: 2px;
+}
+.progress-bar .work-bar {
+  background: rgba(238, 47, 81, 1);
+}
+.progress-bar .break-bar {
+  background: rgba(116, 94, 183, 1);
+}
+
+.appTransition-appear .progress-bar{
+  opacity: 0;
+}
+.appTransition-appear.appTransition-appear-active .progress-bar {
+  opacity: .4;
+}
+.appTransition-enter .progress-bar{
+  opacity: 0;
+}
+.appTransition-enter.appTransition-enter-active .progress-bar{
+  opacity: .4;
+}
+.appTransition-leave.appTransition-leave-active .progress-bar{
+  opacity: 0;
+}

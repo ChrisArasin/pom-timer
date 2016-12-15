@@ -1,0 +1,117 @@
+::selection {
+  background: rgba(255, 255, 255, .125);
+}
+.start-form-wrap {
+  color: #ccc;
+  width: 390px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.start-form p {
+  font-size: 20px;
+  line-height: 38px;
+}
+.form-header {
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing: .08em;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+.start-form .input {
+  outline: none;
+  border:none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  font-size: 30px;
+  height: 30px;
+  padding: 2px 4px 0;
+  margin: 0 2px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color .2s;
+  min-width: 20px;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", sans-serif;
+}
+.start-form .input:focus {
+  background: #333;
+}
+.start-form .input.work-mins {
+  color: #db1d4a;
+  border-color: #db1d4a;
+}
+.start-form .input.break-mins {
+  color: #6e57a4;
+  border-color: #6e57a4;
+}
+.start-form .input.num-times {
+  color: #fff;
+  border-color: #fff;
+}
+.form-total {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500
+}
+input[type="submit"] {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 13px 25px;
+  border-radius: 3px;
+  border: 2px solid #db1d4a;
+  background: transparent;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", sans-serif;
+  font-weight: 500;
+  letter-spacing: .1em;
+  margin-top: 8px;
+  transition: all .2s;
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  background: #303030;
+  cursor: pointer;
+}
+input[type="submit"]:active {
+  background: #393939;
+}
+.appTransition-appear, .appTransition-enter {
+  z-index: 5000;
+}
+.appTransition-leave {
+  z-index: 1000;
+}
+.appTransition-appear .formChild{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appTransition-appear.appTransition-appear-active .formChild {
+  opacity: 1;
+  transition: all .5s;
+  transform: translateY(0);
+}
+.appTransition-enter .formChild{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appTransition-enter.appTransition-enter-active .formChild{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .5s;
+}
+.appTransition-leave .formChild{
+  transform: translateY(0);
+  opacity: 1;
+}
+.appTransition-leave.appTransition-leave-active .formChild{
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+}
+.front {
+  z-index: 1000;
+}

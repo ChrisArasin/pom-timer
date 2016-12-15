@@ -1,0 +1,68 @@
+.history {
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+h2.history-header {
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing: .06em;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+.history h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #ccc;
+}
+.history p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 27px;
+  margin: 0 0 27px;
+}
+.history-controls {
+    margin: 27px 0;
+}
+.history-comp {
+  width: 50%;
+  display: inline-block;
+  font-size: 15px;
+  color: #ccc;
+}
+.positive {
+  color: #76ea76;
+}
+.negative {
+  color: #c53551;
+}
+.appTransition-appear .historyChild{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appTransition-appear.appTransition-appear-active .historyChild {
+  transition: all .5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.appTransition-enter .historyChild{
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appTransition-enter.appTransition-enter-active .historyChild {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .5s;
+}
+.appTransition-leave .historyChild {
+  transform: translateY(0);
+  opacity: 1;
+}
+.appTransition-leave.appTransition-leave-active .historyChild {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all .5s;
+}

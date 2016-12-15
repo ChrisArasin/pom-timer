@@ -1,0 +1,15 @@
+canvas {
+  display: block;
+  padding:0;
+  margin:0 auto;
+  overflow: visible;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.canvasWrap {
+  position: relative;
+  overflow: visible;
+  transition: all .4s;
+}
