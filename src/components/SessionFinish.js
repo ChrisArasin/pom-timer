@@ -1,7 +1,6 @@
 import React from 'react';
 import VerticalCenter from './VerticalCenter';
 import utils from './utils/utils.js';
-
 import './SessionFinish.css';
 
 const SessionFinish = ({sessionWork, sessionBreak, todayWork, todayBreak, handleStartAnother}) => {

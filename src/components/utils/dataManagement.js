@@ -83,8 +83,6 @@ export const getWeekData = (dayData) => {
       weekCount++;
     }
 
-
-
     //add week end date if at end or end of week
     let nextDay
     if (dayData[i + 1]) {
@@ -104,7 +102,6 @@ export const getWeekData = (dayData) => {
     // else if (dayOfWeek >= 6) {
     //   weekData[weekCount].endDate = currentDayData.date;
     // }
-
   }
   //if there is only 1 week of data, it doesn't have an end date yet, add one
   if (weekData.length === 1) {

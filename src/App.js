@@ -117,7 +117,7 @@ class App extends Component {
     this.saveTodayData();
     setTimeout(()=>{
       this.clearToView('FINISH', 10);
-    }, 900)
+    }, 900);
 
   }
 
@@ -138,8 +138,7 @@ class App extends Component {
           sessionBreak={this.state.sessionBreak}
           todayWork={this.state.todayWork}
           todayBreak={this.state.todayBreak}
-          handleStartAnother={this.handleStartAnother.bind(this)}
-          />
+          handleStartAnother={this.handleStartAnother.bind(this)}/>
         break;
       case 'HISTORY':
         component = <History key="historyView" data={this.state.data} />;
@@ -159,7 +158,9 @@ class App extends Component {
             {component}
         </ReactCSSTransitionGroup>
 
-        {/* <div style={{zIndex: 4000, position:'absolute', top: '20px'}}>
+        {/*
+          *button to add sample data
+          <div style={{zIndex: 4000, position:'absolute', top: '20px'}}>
           <a style={{color: '#fff', padding: '20px 10px'}} onClick={dataManagement.saveSampleData} >Sample Data</a>
         </div> */}
 

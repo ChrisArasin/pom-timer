@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import VerticalCenter from '../VerticalCenter';
 import Bar from './Bar';
 import Toggle from './Toggle';
@@ -6,7 +6,7 @@ import RatioComparison from './RatioComparison';
 import {getWeekData} from '../utils/dataManagement';
 import './History.css'
 
-class History extends Component {
+class History extends React.Component {
   constructor() {
     super();
     this.state = {

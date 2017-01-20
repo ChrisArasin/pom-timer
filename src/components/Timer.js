@@ -24,7 +24,6 @@ class Timer extends Component {
     this.handleKeypress = this.handleKeypress.bind(this);
   }
   componentDidMount() {
-
     window.addEventListener('keyup', this.handleKeypress);
     requestAnimationFrame(()=>{
       this.setState({
@@ -89,7 +88,6 @@ class Timer extends Component {
       }
     }
   }
-
   unPause() {
     if (this.state.paused) {
       const pauseEnd = new Date().getTime();
@@ -109,7 +107,6 @@ class Timer extends Component {
     window.removeEventListener('keyup', this.handleKeypress);
     cancelAnimationFrame(this.timer);
   }
-
   switch() {
     if (this.state.status === 'active') {
 

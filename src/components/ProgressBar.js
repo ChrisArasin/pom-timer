@@ -8,8 +8,8 @@ const ProgressBar = ({totalWork, totalBreak, totalTime, width, margin, status, b
 
   let workWidthStyle = { width: '1px', opacity: 0 }
   let breakWidthStyle = { width: '1px', opacity: 0 }
-
   let denominator = totalTime;
+  
   if (totalWork + totalBreak > totalTime) {
     denominator = totalWork + totalBreak
   }
@@ -22,7 +22,7 @@ const ProgressBar = ({totalWork, totalBreak, totalTime, width, margin, status, b
     breakWidthStyle = {
       width: '1px',
       transform: 'translateX(' + totalWork / denominator  * width + 'px)' +
-                  ' scaleX(' + totalBreak / denominator  * width + ')'
+                 'scaleX(' + totalBreak / denominator  * width + ')'
     };
   }
 
@@ -33,7 +33,6 @@ const ProgressBar = ({totalWork, totalBreak, totalTime, width, margin, status, b
 
   return (
     <div className={outerClasses} style={outerBarStyle}>
-
       <div className="bar work-bar" style={workWidthStyle} />
       <div className="bar break-bar" style={breakWidthStyle} />
       <div className="bk-bar" />

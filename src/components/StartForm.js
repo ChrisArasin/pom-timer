@@ -31,12 +31,10 @@ const StartForm = (props) => {
 
   let formContents =  [
     <div className="formChild" key="form0"><h2 className="form-header">Start a Session</h2></div>,
-    <div style={delays[0]}  key="form1" className="formChild"><p>I will work in uninterrupted<br />
-      periods of {minInput} minutes, with breaks<br />
-      of {breakInput} minutes. I'll do this {setNumTimesInput} time{props.setNumTimes !== 1 ? 's' : null}.</p></div>,
-      <div style={delays[1]}  key="form2" className="formChild"><p>It will take <span className="form-total">{displayTime}</span></p></div>,
-      <div key="form3" className="formChild" style={delays[2]}><input type="submit" value="Pomodo it" /></div>
-    ];
+    <div style={delays[0]}  key="form1" className="formChild"><p>I will work in uninterrupted<br />periods of {minInput} minutes, with breaks<br /> of {breakInput} minutes. I'll do this {setNumTimesInput} time{props.setNumTimes !== 1 ? 's' : null}.</p></div>,
+    <div style={delays[1]}  key="form2" className="formChild"><p>It will take <span className="form-total">{displayTime}</span></p></div>,
+    <div key="form3" className="formChild" style={delays[2]}><input type="submit" value="Pomodo it" /></div>
+  ];
 
   return (
     <VerticalCenter front={true}>
